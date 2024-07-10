@@ -4,6 +4,7 @@
 #define LED_BLUE (1U << 2)
 #define LED_GREEN (1U << 3)
 
+
 void SystemInit(void)
 {
     SYSCTL_RCGCGPIO_R |= 0x20; // PortF clock enable
