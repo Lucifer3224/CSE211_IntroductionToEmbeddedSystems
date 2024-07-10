@@ -1,10 +1,10 @@
-         AREA RESET, DATA, READONLY  
+                 AREA RESET, DATA, READONLY  
 		 EXPORT __Vectors 
 __Vectors 
 		 DCD 0x20008000 
 		 DCD Reset_Handler 
 		 ALIGN 
-         AREA myCode, CODE, ReadOnly 
+          	 AREA myCode, CODE, ReadOnly 
 		 ENTRY 
 		 EXPORT Reset_Handler 
    
