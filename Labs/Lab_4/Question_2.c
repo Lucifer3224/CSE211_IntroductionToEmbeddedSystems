@@ -3,6 +3,7 @@
 #include <stdio.h>
 #define CR 0x0D
 
+
 void UART_Init(void)
 {
     SYSCTL_RCGCUART_R |= 0x0001;
