@@ -17,6 +17,7 @@ void UART_Init(void)
     GPIO_PORTA_DEN_R |= 0x03;
     GPIO_PORTA_AMSEL_R &= ~0x03;
 }
+
 void RGB_Init(void)
 {
     SYSCTL_RCGCGPIO_R |= 0x20; // enable clk for port F
