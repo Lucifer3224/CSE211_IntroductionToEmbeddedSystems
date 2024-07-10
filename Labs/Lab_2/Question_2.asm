@@ -1,18 +1,18 @@
-         AREA RESET, DATA, READONLY  
+	         AREA RESET, DATA, READONLY  
 		 EXPORT __Vectors 
 __Vectors 
 		 DCD 0x20008000 
 		 DCD Reset_Handler 
 		 ALIGN 
-         AREA PowerCalculation, CODE, ReadOnly 
+	         AREA PowerCalculation, CODE, ReadOnly 
 		 ENTRY 
 		 EXPORT Reset_Handler 
    
 Reset_Handler   
 		 MOV R0, #7  ; R0 is xx, the base
 		 MOV R1, #3  ; R1 is yy, the exponent
-         BL Power    ; Call the subroutine to calculate xx^yy
-         B End       ; The result is now in R0, can be used as needed
+	         BL Power    ; Call the subroutine to calculate xx^yy
+                 B End       ; The result is now in R0, can be used as needed
 		 
 ; Subroutine to calculate power
 ; R0 = base, R1 = exponent, R2 = result
